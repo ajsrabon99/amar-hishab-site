@@ -40,8 +40,8 @@
                 <a href="#install" data-bn="কীভাবে কাজ করে">How It Works</a>
                 <a href="#backup" data-bn="ব্যাকআপ ও রিস্টোর">Backup &amp; Restore</a>
                 <a href="#faq" data-bn="প্রশ্নোত্তর">FAQ</a>
-                <a class="btn p dl" href="https://github.com/ajsrabon99/Amar-Hishab-Android/releases/tag/v1.0.2"
-                    target="_blank" rel="noopener noreferrer" data-bn="ডাউনলোড">Download</a>
+                <a class="btn p dl" href="assets/{logo,screenshots,icons}/comingsoon.jpeg" target="_blank"
+                    rel="noopener noreferrer" data-bn="ডাউনলোড">Download</a>
             </nav>
             <div class="tools"><button class="ib" id="lang" type="button"
                     aria-label="Change language">বাংলা</button><button class="ib" id="theme" type="button"
@@ -59,8 +59,8 @@
                         Amar Hishab helps you organize income, expenses, balances and everyday financial records in one
                         simple app.</p>
                     <div class="cta">
-                        <a class="btn p dl" href="https://github.com/ajsrabon99/Amar-Hishab-Android/releases/tag/v1.0.2"
-                            target="_blank" rel="noopener noreferrer" data-bn="APK ডাউনলোড করুন">Download APK</a>
+                        <a class="btn p dl" href="assets/{logo,screenshots,icons}/comingsoon.jpeg" target="_blank"
+                            rel="noopener noreferrer" data-bn="APK ডাউনলোড করুন">Download APK</a>
                         <a class="btn s" href="#features" data-bn="অ্যাপ সম্পর্কে জানুন">Learn about the app</a>
                     </div>
                     <p class="note"
@@ -88,6 +88,53 @@
         <div class="wrap">
             <div class="ad-slot ad-slot-top" aria-label="Advertisement"></div>
         </div>
+
+        <!-- PASTE THIS between the "#install" section and the "App preview" section in index.html -->
+        <section id="web" class="web-sec">
+            <div class="wrap web-grid">
+                <div>
+                    <h2 data-bn="অফিসিয়াল ওয়েবসাইট ভার্সন">Official website version</h2>
+                    <p class="lead"
+                        data-bn="APK ছাড়াও Amar Hishab-এর অফিসিয়াল ওয়েবসাইট ভার্সন ব্রাউজারে খুলে দেখতে পারেন।">
+                        Prefer a browser? Open the official Amar Hishab website version and take a look, no APK needed.
+                    </p>
+                    <div class="cta">
+                        <a class="btn p" href="https://amar-hisab.onrender.com/" target="_blank"
+                            rel="noopener noreferrer" data-bn="ওয়েবসাইট ভার্সন খুলুন">Open website version</a>
+                        <a class="btn s" href="#install" data-bn="অথবা APK ইনস্টল করুন">Or install the APK</a>
+                    </div>
+                    <p class="note" data-bn="নতুন ট্যাবে amar-hisab.onrender.com খুলবে।">Opens amar-hisab.onrender.com
+                        in a new tab.</p>
+                </div>
+                <div class="web-preview" id="webpreview">
+                    <div class="browser" role="img"
+                        aria-label="Illustrative preview of the Amar Hishab website version showing a balance, a weekly chart and recent transactions">
+                        <div class="bchrome"><i></i><i></i><i></i><span class="url">🔒 amar-hisab.onrender.com</span>
+                        </div>
+                        <div class="bbody">
+                            <div class="bside"><b></b><b></b><b></b><b></b></div>
+                            <div class="bmain">
+                                <div class="bhead"><small data-bn="মোট ব্যালেন্স">Total balance</small><strong
+                                        class="count" data-to="24500">৳ 24,500</strong></div>
+                                <div class="bars" aria-hidden="true"><span style="--h:45%"></span><span
+                                        style="--h:70%"></span><span style="--h:35%"></span><span
+                                        style="--h:85%"></span><span style="--h:55%"></span><span
+                                        style="--h:65%"></span><span style="--h:40%"></span></div>
+                                <div class="brows">
+                                    <div><span data-bn="বেতন">Salary</span><em class="in">+ ৳ 30,000</em></div>
+                                    <div><span data-bn="বাজার">Groceries</span><em class="out">− ৳ 2,400</em></div>
+                                    <div><span data-bn="মোবাইল রিচার্জ">Mobile recharge</span><em class="out">− ৳
+                                            300</em></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="sample" data-bn="নমুনা চিত্র, প্রকৃত ডেটা নয়।">Illustration with sample numbers, not real
+                        data.</p>
+                </div>
+            </div>
+        </section>
+
 
         <section id="features" class="alt">
             <div class="wrap">
@@ -252,11 +299,20 @@
                 <p class="note" data-bn="প্রকৃত স্ক্রিনশট শীঘ্রই যোগ হবে।">Real screenshots will be added here.</p>
                 <!-- To add screenshots: put files in assets/screenshots/ and replace each placeholder div with <img src="assets/screenshots/NAME.webp" alt="..." width="360" height="760" loading="lazy"> -->
                 <div class="shots">
-                    <div class="shot" role="img" aria-label="Placeholder: dashboard screenshot">Dashboard</div>
-                    <div class="shot" role="img" aria-label="Placeholder: transactions screenshot">Transactions</div>
-                    <div class="shot" role="img" aria-label="Placeholder: reports screenshot">Reports</div>
-                    <div class="shot" role="img" aria-label="Placeholder: settings screenshot">Settings</div>
-                    <div class="shot" role="img" aria-label="Placeholder: backup screenshot">Backup</div>
+                    <div class="shot" role="img" aria-label="Amar Hishab dashboard screenshot"><img
+                            src="assets/{logo,screenshots,icons}/Dashboard.jpeg"
+                            alt="Amar Hishab personal finance dashboard showing income, expenses, balance, and savings information within the apps interface" />
+                    </div>
+                    <div class="shot" role="img" aria-label="Placeholder: transactions screenshot"> <img
+                            src="assets/{logo,screenshots,icons}/transaction.jpeg"
+                            alt="Amar Hishab transactions screen" /></div>
+                    <div class="shot" role="img" aria-label="Placeholder: reports screenshot"> <img
+                            src="assets/{logo,screenshots,icons}/reports.jpeg" alt="Amar Hishab reports screen" /></div>
+                    <div class="shot" role="img" aria-label="Placeholder: settings screenshot"> <img
+                            src="assets/{logo,screenshots,icons}/settings.jpeg" alt="Amar Hishab settings screen" />
+                    </div>
+                    <div class="shot" role="img" aria-label="Placeholder: backup screenshot"> <img
+                            src="assets/{logo,screenshots,icons}/backup.jpeg" alt="Amar Hishab backup screen" /></div>
                 </div>
             </div>
         </section>
