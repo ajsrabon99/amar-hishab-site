@@ -1,4 +1,6 @@
 # ads.txt placeholder. No publisher ID has been invented.
 # After AdSense setup, replace this file with the exact line Google gives you, e.g.:
-#   google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+#   google.com, pub-6208705517596475, DIRECT, f08c47fec0942fa0
 # Do NOT publish that example line with a fake ID.
+
+google.com, pub-6208705517596475, DIRECT, f08c47fec0942fa0
