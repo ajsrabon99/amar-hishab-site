@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Amar Hishab — Personal Finance Tracker for Android</title>
+    <meta name="description"
+        content="Amar Hishab helps you track income, expenses, balances, savings goals and personal financial records with simple backup and restore tools.">
+    <meta name="robots" content="index,follow">
+    <!-- Replace YOUR-DOMAIN.example with your real domain everywhere in this file -->
+    <link rel="canonical" href="https://YOUR-DOMAIN.example/">
+    <link rel="icon" href="assets/logo/logo.jpeg" type="image/jpeg">
+    <meta name="theme-color" content="#0f766e">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Amar Hishab — Personal Finance Tracker for Android">
+    <meta property="og:description"
+        content="Track income, expenses, balances and savings goals with simple backup and restore.">
+    <meta property="og:url" content="https://YOUR-DOMAIN.example/">
+    <meta property="og:image" content="https://YOUR-DOMAIN.example/assets/logo/logo.jpeg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Amar Hishab — Personal Finance Tracker for Android">
+    <meta name="twitter:description"
+        content="Track income, expenses, balances and savings goals with simple backup and restore.">
+    <link rel="stylesheet" href="styles.css">
+    <script>try { var t = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light'); document.documentElement.dataset.theme = t } catch (e) { }</script>
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Amar Hishab","alternateName":"আমার হিসাব","url":"https://YOUR-DOMAIN.example/"},{"@type":"SoftwareApplication","name":"Amar Hishab","alternateName":"আমার হিসাব","operatingSystem":"Android","applicationCategory":"FinanceApplication","description":"A personal finance tracker for Android for recording income, expenses, balances and savings goals.","downloadUrl":"https://github.com/ajsrabon99/Amar-Hishab-Android/releases/tag/v1.0.2","softwareVersion":"1.0.2"},{"@type":"Organization","name":"Amar Hishab","url":"https://YOUR-DOMAIN.example/","sameAs":["https://github.com/ajsrabon99/Amar-Hishab-Android","https://t.me/amarhishab"]}]}</script>
+</head>
+
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header>
+        <div class="wrap bar">
+            <a class="brand" href="#top"><img src="assets/logo/logo.jpeg" alt="" width="34" height="34"><span>Amar
+                    Hishab</span></a>
+            <nav id="nav" aria-label="Main">
+                <a href="#features" data-bn="ফিচার">Features</a>
+                <a href="#install" data-bn="কীভাবে কাজ করে">How It Works</a>
+                <a href="#backup" data-bn="ব্যাকআপ ও রিস্টোর">Backup &amp; Restore</a>
+                <a href="#faq" data-bn="প্রশ্নোত্তর">FAQ</a>
+                <a class="btn p dl" href="https://github.com/ajsrabon99/Amar-Hishab-Android/releases/tag/v1.0.2"
+                    target="_blank" rel="noopener noreferrer" data-bn="ডাউনলোড">Download</a>
+            </nav>
+            <div class="tools"><button class="ib" id="lang" type="button"
+                    aria-label="Change language">বাংলা</button><button class="ib" id="theme" type="button"
+                    aria-label="Toggle theme">☾</button><button class="ib" id="menu" type="button" aria-expanded="false"
+                    aria-controls="nav" aria-label="Menu">☰</button></div>
+        </div>
+    </header>
+    <main id="main"><span id="top"></span>
+        <section>
+            <div class="wrap hero">
+                <div>
+                    <h1 data-bn="আপনার টাকার হিসাব, এখন আরও সহজ">Manage your money with clarity.</h1>
+                    <p class="lead"
+                        data-bn="Amar Hishab (আমার হিসাব) আপনার আয়, ব্যয়, ব্যালেন্স ও দৈনন্দিন আর্থিক হিসাব এক অ্যাপে সহজভাবে গুছিয়ে রাখতে সাহায্য করে।">
+                        Amar Hishab helps you organize income, expenses, balances and everyday financial records in one
+                        simple app.</p>
+                    <div class="cta">
+                        <a class="btn p dl" href="https://github.com/ajsrabon99/Amar-Hishab-Android/releases/tag/v1.0.2"
+                            target="_blank" rel="noopener noreferrer" data-bn="APK ডাউনলোড করুন">Download APK</a>
+                        <a class="btn s" href="#features" data-bn="অ্যাপ সম্পর্কে জানুন">Learn about the app</a>
+                    </div>
+                    <p class="note"
+                        data-bn="Android অ্যাপ। ডাউনলোড অফিসিয়াল GitHub Release পেজ থেকে হয়। Google Play-তে উপলব্ধ নয়।">
+                        Android app. Downloads come from the official GitHub Release page. Not on Google Play.</p>
+                </div>
+                <div class="ledger" role="img"
+                    aria-label="Illustrative sample of the app's balance and transaction list">
+                    <div class="top"><img src="assets/logo/logo.jpeg" alt="" width="40" height="40"><strong>Amar
+                            Hishab</strong></div>
+                    <div class="note" data-bn="মোট ব্যালেন্স">Total balance</div>
+                    <div class="bal">৳ 24,500</div>
+                    <div class="row"><span data-bn="বেতন">Salary</span><span class="in">+ ৳ 30,000</span></div>
+                    <div class="row"><span data-bn="বাজার">Groceries</span><span class="out">− ৳ 2,400</span></div>
+                    <div class="row"><span data-bn="মোবাইল রিচার্জ">Mobile recharge</span><span class="out">− ৳
+                            300</span></div>
+                    <p class="sample" data-bn="নমুনা চিত্র, প্রকৃত ডেটা নয়।">Illustration with sample numbers, not real
+                        data.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GOOGLE ADSENSE SLOT: TOP -->
+        <!-- Insert approved AdSense code here after site approval -->
+        <div class="wrap">
+            <div class="ad-slot ad-slot-top" aria-label="Advertisement"></div>
+        </div>
+
+        <section id="features" class="alt">
+            <div class="wrap">
+                <h2 data-bn="অ্যাপে যা আছে">What the app does</h2>
+                <p class="lead"
+                    data-bn="Amar Hishab ব্যক্তিগত আর্থিক হিসাব রাখার জন্য তৈরি। নিচে মূল কাজগুলো দেওয়া হলো।">Amar
+                    Hishab is built for personal record keeping. These are its main functions.</p>
+                <div class="grid">
+                    <article class="card rv">
+                        <h3 data-bn="আয় ও ব্যয়ের হিসাব">Income &amp; expense tracking</h3>
+                        <p data-bn="আয় ও খরচ লিখে রাখুন, ক্যাটেগরি, তারিখ ও নোট যোগ করুন এবং লেনদেনের ইতিহাস দেখুন।">
+                            Record income and expenses, add a category, date and note, and review your transaction
+                            history.</p>
+                    </article>
+                    <article class="card rv">
+                        <h3 data-bn="অ্যাকাউন্ট ব্যবস্থাপনা">Accounts</h3>
+                        <p data-bn="ব্যাংক, bKash, Nagad, নগদ টাকা ও অন্যান্য অ্যাকাউন্টের ব্যালেন্স আলাদা করে দেখুন।">
+                            Keep separate balances for bank, bKash, Nagad, cash and other accounts the app supports.</p>
+                    </article>
+                    <article class="card rv">
+                        <h3 data-bn="ব্যালেন্স ওভারভিউ">Balance overview</h3>
+                        <p data-bn="মোট ব্যালেন্স, আয় ও ব্যয়ের সারাংশ দেখুন। প্রয়োজনে ব্যালেন্স লুকিয়ে রাখা যায়।">
+                            See your overall balance and an income/expense overview. Balance can be hidden or shown.</p>
+                    </article>
+                    <article class="card rv">
+                        <h3 data-bn="ক্যাটেগরি">Categories</h3>
+                        <p
+                            data-bn="আয় ও ব্যয়ের জন্য ক্যাটেগরি আছে, আর নিজের প্রয়োজনমতো কাস্টম ক্যাটেগরি বানানো যায়।">
+                            Income and expense categories are included, and you can manage custom categories to fit your
+                            needs.</p>
+                    </article>
+                    <article class="card rv">
+                        <h3 data-bn="রিপোর্ট">Reports</h3>
+                        <p data-bn="আয় ও ব্যয়ের সারসংক্ষেপ দেখে বুঝুন টাকা কোথায় যাচ্ছে।">Review summaries of income
+                            and spending to understand where your money goes.</p>
+                    </article>
+                    <article class="card rv">
+                        <h3 data-bn="সঞ্চয়ের লক্ষ্য">Savings goals</h3>
+                        <p data-bn="সঞ্চয়ের লক্ষ্য তৈরি করুন এবং জমানো অর্থ ও অগ্রগতি দেখুন।">Create savings goals and
+                            follow how much you have saved so far.</p>
+                    </article>
+                    <article class="card rv">
+                        <h3 data-bn="ইমপোর্ট / এক্সপোর্ট">Import / export</h3>
+                        <p
+                            data-bn="অ্যাপে ইমপোর্ট ও এক্সপোর্ট সুবিধা আছে। কোন ফরম্যাট সমর্থিত তা অ্যাপের ভেতরে দেখে নিন।">
+                            The app offers import and export. Check inside the app for the exact formats it supports.
+                        </p>
+                    </article>
+                    <article class="card rv">
+                        <h3 data-bn="থিম">Themes</h3>
+                        <p data-bn="লাইট, ডার্ক ও সিস্টেম থিম।">Light, dark and system themes.</p>
+                    </article>
+                    <article class="card rv">
+                        <h3 data-bn="ব্যক্তিগত ব্যবহার">Personal use</h3>
+                        <p
+                            data-bn="অ্যাপটি ব্যক্তিগত আর্থিক হিসাব ব্যবস্থাপনার জন্য তৈরি। বিস্তারিত জানতে গোপনীয়তা নীতি দেখুন।">
+                            The app is designed for managing personal finances. See the Privacy Policy for details.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrap">
+                <h2 data-bn="কেন Amar Hishab">Why Amar Hishab</h2>
+                <p class="lead" data-bn="টাকার হিসাব মনে রাখা কঠিন। একটি জায়গায় লিখে রাখলে মাস শেষে অবাক হতে হয় না।">
+                    Money is hard to keep in your head. Writing it down in one place means fewer surprises at month end.
+                </p>
+                <div class="grid">
+                    <div class="card">
+                        <h3 data-bn="প্রতিদিনের খরচ">Daily spending</h3>
+                        <p data-bn="বাজার, যাতায়াত, রিচার্জ, যা-ই খরচ করুন, সঙ্গে সঙ্গে লিখে রাখুন।">Log groceries,
+                            transport or recharge as you spend.</p>
+                    </div>
+                    <div class="card">
+                        <h3 data-bn="মাসিক চিত্র">Monthly picture</h3>
+                        <p data-bn="মাসে কত আয় হলো, কত গেল, তা এক নজরে দেখুন।">See what came in and what went out in a
+                            month.</p>
+                    </div>
+                    <div class="card">
+                        <h3 data-bn="একাধিক অ্যাকাউন্ট">Several accounts</h3>
+                        <p data-bn="ব্যাংক, মোবাইল ব্যাংকিং ও নগদ টাকার ব্যালেন্স গুলিয়ে ফেলবেন না।">Keep bank, mobile
+                            banking and cash balances apart.</p>
+                    </div>
+                    <div class="card">
+                        <h3 data-bn="সঞ্চয় পরিকল্পনা">Saving up</h3>
+                        <p data-bn="নির্দিষ্ট লক্ষ্যের জন্য জমানো টাকার অগ্রগতি অনুসরণ করুন।">Track progress toward a
+                            specific goal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="backup" class="alt">
+            <div class="wrap">
+                <h2 data-bn="ব্যাকআপ ও রিস্টোর">Backup &amp; Restore</h2>
+                <p class="lead"
+                    data-bn="আপনার আর্থিক রেকর্ড গুরুত্বপূর্ণ। অ্যাপ আপডেট বা পুনরায় ইনস্টল করার আগে আপনার ডেটার Backup নেওয়া অত্যন্ত গুরুত্বপূর্ণ।">
+                    Your financial records are important. Before updating or reinstalling the app, always create a
+                    backup.</p>
+                <div class="two">
+                    <div class="card">
+                        <h3 data-bn="ব্যাকআপ নিন">Create a backup</h3>
+                        <p class="path">Settings → Data Backup → Create Backup</p>
+                        <p style="margin-top:1rem" data-bn="তৈরি হওয়া ZIP ফাইলটি নিরাপদ জায়গায় সংরক্ষণ করুন।">Save
+                            the ZIP file somewhere safe.</p>
+                    </div>
+                    <div class="card">
+                        <h3 data-bn="রিস্টোর করুন">Restore your data</h3>
+                        <p class="path">Settings → Restore Data → select backup ZIP → Restore</p>
+                    </div>
+                </div>
+                <div class="warn" role="note"
+                    data-bn="ডেটা সফলভাবে রিস্টোর করে যাচাই না করা পর্যন্ত পুরোনো ব্যাকআপ কখনও মুছবেন না।">Never delete
+                    your old backup until you have successfully restored and verified your data.</div>
+            </div>
+        </section>
+
+        <section id="install">
+            <div class="wrap two">
+                <div>
+                    <h2 data-bn="কীভাবে APK ডাউনলোড ও ইনস্টল করবেন">How to Download &amp; Install</h2>
+                    <ol class="steps">
+                        <li data-bn="“APK ডাউনলোড করুন” বাটনে ক্লিক করুন।">Click “Download APK”.</li>
+                        <li data-bn="GitHub Release পেজ খুলবে।">The GitHub Release page opens.</li>
+                        <li data-bn="Assets সেকশন থেকে APK ফাইলটি বেছে নিন।">Pick the APK file under Assets.</li>
+                        <li data-bn="ডাউনলোড শেষ হলে ফাইলটি খুলুন।">When it finishes, open the file.</li>
+                        <li data-bn="Android অনুমতি চাইলে প্রয়োজনীয় ইনস্টলেশন অনুমতি দিন।">If Android asks, allow the
+                            needed installation permission.</li>
+                        <li data-bn="Install করুন।">Install.</li>
+                        <li data-bn="অ্যাপ খুলে প্রয়োজনে Data Restore করুন।">Open the app and restore your data if
+                            needed.</li>
+                    </ol>
+                    <div class="warn"
+                        data-bn="Google Play-এর বাইরে থেকে APK ইনস্টল করলে Android সতর্কতা দেখাতে পারে। এটা স্বাভাবিক। শুধু অফিসিয়াল GitHub Release থেকে ডাউনলোড করুন এবং নিরাপত্তা সেটিং অপ্রয়োজনে বন্ধ করবেন না।">
+                        Android may show a warning for APKs installed from outside Google Play. Only download from the
+                        official GitHub Release, and don’t turn off security features you don’t need to.</div>
+                </div>
+                <div>
+                    <h2 data-bn="কীভাবে আপডেট করবেন">How to Update Amar Hishab</h2>
+                    <ol class="steps">
+                        <li data-bn="Amar Hishab খুলুন।">Open Amar Hishab.</li>
+                        <li data-bn="Settings-এ যান।">Go to Settings.</li>
+                        <li data-bn="Data Backup তৈরি করুন।">Create a Data Backup.</li>
+                        <li data-bn="ZIP ফাইল নিরাপদে রাখুন।">Save the ZIP safely.</li>
+                        <li data-bn="অফিসিয়াল GitHub Release থেকে সর্বশেষ APK ডাউনলোড করুন।">Download the latest APK
+                            from the official GitHub Release.</li>
+                        <li data-bn="অ্যাপ ইনস্টল/আপডেট করুন।">Install or update the app.</li>
+                        <li data-bn="নতুন ভার্সন খুলুন।">Open the new version.</li>
+                        <li data-bn="প্রয়োজনে Restore Data দিয়ে আগের ব্যাকআপ ফিরিয়ে আনুন।">If needed, use Restore
+                            Data with your backup.</li>
+                    </ol>
+                    <div class="warn" data-bn="আপডেট বা পুনরায় ইনস্টলের আগে সবসময় ব্যাকআপ রাখুন।">Always keep a backup
+                        before updating or reinstalling.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="alt">
+            <div class="wrap">
+                <h2 data-bn="অ্যাপ প্রিভিউ">App preview</h2>
+                <p class="note" data-bn="প্রকৃত স্ক্রিনশট শীঘ্রই যোগ হবে।">Real screenshots will be added here.</p>
+                <!-- To add screenshots: put files in assets/screenshots/ and replace each placeholder div with <img src="assets/screenshots/NAME.webp" alt="..." width="360" height="760" loading="lazy"> -->
+                <div class="shots">
+                    <div class="shot" role="img" aria-label="Placeholder: dashboard screenshot">Dashboard</div>
+                    <div class="shot" role="img" aria-label="Placeholder: transactions screenshot">Transactions</div>
+                    <div class="shot" role="img" aria-label="Placeholder: reports screenshot">Reports</div>
+                    <div class="shot" role="img" aria-label="Placeholder: settings screenshot">Settings</div>
+                    <div class="shot" role="img" aria-label="Placeholder: backup screenshot">Backup</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GOOGLE ADSENSE SLOT: CONTENT -->
+        <!-- Insert approved AdSense code here after site approval -->
+        <div class="wrap">
+            <div class="ad-slot ad-slot-content" aria-label="Advertisement"></div>
+        </div>
+
+        <section id="faq">
+            <div class="wrap">
+                <h2 data-bn="প্রশ্নোত্তর">FAQ</h2>
+                <details>
+                    <summary data-bn="Amar Hishab কী?">What is Amar Hishab?</summary>
+                    <p data-bn="ব্যক্তিগত আয়, ব্যয়, ব্যালেন্স ও সঞ্চয়ের হিসাব রাখার একটি Android অ্যাপ।">An Android
+                        app for keeping personal income, expense, balance and savings records.</p>
+                </details>
+                <details>
+                    <summary data-bn="অ্যাপটি কি ফ্রি?">Is it free?</summary>
+                    <p data-bn="মূল্য সম্পর্কে সর্বশেষ তথ্য GitHub Release পেজে দেখুন।">Check the GitHub Release page
+                        for the latest information.</p>
+                </details>
+                <details>
+                    <summary data-bn="APK কোথায় পাব ও কীভাবে ইনস্টল করব?">Where do I get the APK and how do I install
+                        it?</summary>
+                    <p data-bn="অফিসিয়াল GitHub Release পেজ থেকে। ধাপগুলো উপরের ইনস্টল সেকশনে আছে।">From the official
+                        GitHub Release page. The steps are in the install section above.</p>
+                </details>
+                <details>
+                    <summary data-bn="আপডেট করলে কি ডেটা মুছে যাবে?">Will my data be deleted when I update?</summary>
+                    <p data-bn="নিশ্চিত থাকতে আগে ব্যাকআপ নিন। প্রয়োজনে Restore Data দিয়ে ফিরিয়ে আনুন।">To be safe,
+                        back up first. You can restore afterwards if needed.</p>
+                </details>
+                <details>
+                    <summary data-bn="ব্যাকআপ ও রিস্টোর কীভাবে করব?">How do I back up and restore?</summary>
+                    <p data-bn="Settings → Data Backup → Create Backup। রিস্টোর: Settings → Restore Data।">Settings →
+                        Data Backup → Create Backup. To restore: Settings → Restore Data.</p>
+                </details>
+                <details>
+                    <summary data-bn="APK ইনস্টল না হলে কী করব?">The APK won’t install. What now?</summary>
+                    <p
+                        data-bn="ফাইলটি পুরোপুরি ডাউনলোড হয়েছে কি না দেখুন, ইনস্টলেশন অনুমতি দিন, তারপরও না হলে GitHub Issues-এ জানান।">
+                        Check the download finished fully, allow installation permission, and if it still fails report
+                        it on GitHub Issues.</p>
+                </details>
+                <details>
+                    <summary data-bn="সমস্যা কীভাবে জানাব?">How do I report a problem?</summary>
+                    <p data-bn="নিচের সাপোর্ট সেকশনের GitHub Issues লিঙ্ক ব্যবহার করুন।">Use the GitHub Issues link in
+                        the support section below.</p>
+                </details>
+            </div>
+        </section>
+
+        <section class="alt">
+            <div class="wrap grid">
+                <div class="card">
+                    <h3 data-bn="অফিসিয়াল GitHub Release">Official GitHub Release</h3>
+                    <p data-bn="সর্বশেষ APK ও রিলিজ নোট এখানে পাবেন।" style="margin-bottom:1rem">The APK and release
+                        notes live here.</p><a class="btn p dl"
+                        href="https://github.com/ajsrabon99/Amar-Hishab-Android/releases/tag/v1.0.2" target="_blank"
+                        rel="noopener noreferrer" data-bn="সর্বশেষ রিলিজ দেখুন">View Latest Release</a>
+                </div>
+                <div class="card">
+                    <h3 data-bn="Amar Hishab কমিউনিটিতে যোগ দিন">Join the Amar Hishab Community</h3>
+                    <p data-bn="Telegram-এ পাবেন অ্যাপ আপডেট, রিলিজ ঘোষণা, গুরুত্বপূর্ণ নোটিশ ও কমিউনিটি সহায়তার তথ্য।"
+                        style="margin-bottom:1rem">On Telegram: app updates, release announcements, important notices
+                        and community support information.</p><a class="btn s" href="https://t.me/amarhishab"
+                        target="_blank" rel="noopener noreferrer" data-bn="Telegram-এ যোগ দিন">Open Telegram</a>
+                </div>
+                <div class="card">
+                    <h3 data-bn="সাপোর্ট">Support</h3>
+                    <p data-bn="সমস্যা বা পরামর্শ GitHub Issues-এ জানান।" style="margin-bottom:1rem">Report problems or
+                        suggestions on GitHub Issues.</p><a class="btn s"
+                        href="https://github.com/ajsrabon99/Amar-Hishab-Android/issues" target="_blank"
+                        rel="noopener noreferrer" data-bn="সমস্যা জানান">Open GitHub Issues</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- GOOGLE ADSENSE SLOT: FOOTER -->
+    <!-- Insert approved AdSense code here after site approval -->
+    <div class="wrap">
+        <div class="ad-slot ad-slot-footer" aria-label="Advertisement"></div>
+    </div>
+
+    <footer>
+        <div class="wrap">
+            <strong>Amar Hishab</strong> · <span data-bn="সহজ। স্পষ্ট। আপনার হিসাব।">Simple. Clear. Your Hishab.</span>
+            <ul class="fl">
+                <li><a href="#top" data-bn="হোম">Home</a></li>
+                <li><a href="#features" data-bn="ফিচার">Features</a></li>
+                <li><a href="#backup" data-bn="ব্যাকআপ ও রিস্টোর">Backup &amp; Restore</a></li>
+                <li><a href="#install" data-bn="ইনস্টল গাইড">How to Install</a></li>
+                <li><a href="#faq" data-bn="প্রশ্নোত্তর">FAQ</a></li>
+                <li><a href="https://github.com/ajsrabon99/Amar-Hishab-Android" target="_blank"
+                        rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://t.me/amarhishab" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+                <li><a href="privacy.html" data-bn="গোপনীয়তা নীতি">Privacy Policy</a></li>
+                <li><a href="disclaimer.html" data-bn="দাবিত্যাগ">Terms / Disclaimer</a></li>
+            </ul>
+            <p class="note">© <span id="year">2026</span> Amar Hishab. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
