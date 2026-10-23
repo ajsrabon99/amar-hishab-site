@@ -23,6 +23,15 @@ section{padding:clamp(3rem,7vw,5.5rem) 0}.alt{background:var(--surface);border-b
 .hero{display:grid;gap:2.5rem;align-items:center;grid-template-columns:1.1fr .9fr}.cta{display:flex;flex-wrap:wrap;gap:.8rem;margin:1.5rem 0 1rem}
 .note{color:var(--muted);font-size:.9rem}
 
+/* ===== PAGE LOAD INTRO MOON NIGHT ANIMATION OVERLAY ===== */
+.intro-anim-overlay{position:fixed;inset:0;background:#050d14;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .6s ease, visibility .6s ease}
+.intro-anim-overlay.fade-out{opacity:0;visibility:hidden;pointer-events:none}
+.intro-anim-overlay canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.intro-skip-box{position:absolute;bottom:35px;z-index:10;text-align:center;display:flex;flex-direction:column;gap:.8rem;align-items:center;animation:fadeInUp 1s ease .5s both}
+.intro-instruction{color:#9bb3af;font-size:1rem;text-shadow:0 2px 8px rgba(0,0,0,0.8)}
+
+@keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
 /* ===== 3D DYNAMIC MOON NIGHT "WHAT'S NEW" BUTTON STYLING ===== */
 .whats-new-badge-wrapper{margin-bottom:1.2rem}
 .whats-new-3d-btn{position:relative;display:inline-flex;align-items:center;gap:.7rem;padding:.75rem 1.4rem;background:linear-gradient(135deg, #0f2c3c 0%, #081622 100%);color:#5eead4;border:1.5px solid #2dd4bf;border-radius:50px;font:inherit;font-weight:700;font-size:.95rem;cursor:pointer;box-shadow:0 8px 25px rgba(45,212,191,0.3), inset 0 1px 1px rgba(255,255,255,0.2);transition:all .3s cubic-bezier(.2,.8,.2,1);animation:wnPulse 2.5s infinite ease-in-out;overflow:hidden}
@@ -126,3 +135,12 @@ nav.open{max-height:420px;padding:1rem;visibility:visible;opacity:1}nav a{paddin
 @keyframes bfloat{50%{transform:translateY(-6px)}}
 @media(max-width:820px){.web-grid{grid-template-columns:1fr}.bside{display:none}}
 @media(prefers-reduced-motion:reduce){.browser,.bars span,.brows div{opacity:1;transform:none;animation:none!important}}
+
+@keyframes moonMergedPop {
+    0% { transform: scale(1); box-shadow: 0 0 25px rgba(253,224,71,0.8), 0 0 50px rgba(45,212,191,0.6); }
+    50% { transform: scale(1.15); background: linear-gradient(135deg, #1b4b5e 0%, #0d2538 100%); color: #fde047; box-shadow: 0 0 40px rgba(253,224,71,1), 0 0 80px rgba(45,212,191,0.8); }
+    100% { transform: scale(1); box-shadow: 0 8px 25px rgba(45,212,191,0.3); }
+}
+.whats-new-3d-btn.moon-merged-pop {
+    animation: moonMergedPop 0.8s ease-in-out !important;
+}

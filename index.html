@@ -39,6 +39,15 @@
 </head>
 
 <body>
+    <!-- Full-screen page load introductory Moon Night entrance canvas animation -->
+    <div id="introAnimOverlay" class="intro-anim-overlay">
+        <canvas id="introCanvas"></canvas>
+        <div class="intro-skip-box">
+            <span class="intro-instruction" data-bn="চান্দের জাদুকরী লুকে স্বাগতম! (Welcome to New Moon Night)">Welcome to New Moon Night Experience</span>
+            <button id="skipIntroBtn" class="btn p" data-bn="ওয়েবসাইটে প্রবেশ করুন">Enter Website &rarr;</button>
+        </div>
+    </div>
+
     <script>
         atOptions = {
             'key': '4c57fc28f67a6d1d4ec19d486bc2cace',
@@ -59,7 +68,7 @@
                 <a href="#backup" data-bn="ব্যাকআপ ও রিস্টোর">Backup &amp; Restore</a>
                 <a href="#faq" data-bn="প্রশ্নোত্তর">FAQ</a>
                 <a class="btn p dl" href="https://github.com/ajsrabon99/Amar-Hishab-Android/releases/tag/V1" target="_blank"
-                    rel="noopener noreferrer" data-bn="ডাউনলোড">Download Old</a>
+                    rel="noopener noreferrer" data-bn="ডাউনলোড">Download</a>
             </nav>
             <div class="tools"><button class="ib" id="lang" type="button"
                     aria-label="Change language">বাংলা</button><button class="ib" id="theme" type="button"
@@ -92,7 +101,7 @@
                         simple app.</p>
                     <div class="cta">
                         <a class="btn p dl" href="https://github.com/ajsrabon99/Amar-Hishab-Android/releases/download/V1/Amar-Hishab-release.apk" target="_blank"
-                            rel="noopener noreferrer" data-bn="APK ডাউনলোড করুন">Download Old APK</a>
+                            rel="noopener noreferrer" data-bn="APK ডাউনলোড করুন">Download APK</a>
                         <a class="btn s disabled-btn" href="#" onclick="return false;" aria-disabled="true" data-bn="নতুন ভার্সন শীঘ্রই আসছে">New Version Coming Soon</a>
                         <a class="btn s" href="#features" data-bn="অ্যাপ সম্পর্কে জানুন">Learn about the app</a>
                     </div>
@@ -219,7 +228,7 @@
                 <div class="web-preview" id="webpreview">
                     <div class="browser" role="img"
                         aria-label="Illustrative preview of the Amar Hishab website version showing a balance, a weekly chart and recent transactions">
-                        <div class="bchrome"><i></i><i></i><i></i><span class="url">🔒 amar-hisab.onrender.com</span>
+                        <div class="bchrome"><i></i><i></i><i></i><span class="url">amar-hisab.onrender.com</span>
                         </div>
                         <div class="bbody">
                             <div class="bside"><b></b><b></b><b></b><b></b></div>
